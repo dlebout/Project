@@ -17,7 +17,7 @@ import PieMenuDessin.PieMenuMouseDrag;
 import PieMenuDessin.PieMenuMouseListener;
 import PieMenuDessin.PtrFunc;
 
-public class Main extends JFrame{
+public class Main extends mainWindow{
 	
 	protected boolean pieActivated = false;
 	protected PieMenu pie;
@@ -28,10 +28,10 @@ public class Main extends JFrame{
 		setUpPie();
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(new Dimension(1200,900));
+		this.setSize(new Dimension(1000,600));
 		//this.pack();
-		this.setContentPane(new AfficheImage());
-		this.getContentPane().setLayout(new BorderLayout()); 
+		//this.setContentPane(new AfficheImage());
+		//this.getContentPane().setLayout(new BorderLayout()); 
 		this.setVisible(true);
 		
 		this.addMouseListener(new PieMenuMouseListener(this));
